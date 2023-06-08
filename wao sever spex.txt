@@ -1,0 +1,11 @@
+Database server
+##############
+Server: localhost via TCP/IP
+Server type: MySQL
+Server version: 5.7.24 
+Protocol version: 10
+
+Web server
+##########
+Apache: 2.4.35 
+PHP version: 7.2.19

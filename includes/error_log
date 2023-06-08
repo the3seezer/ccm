@@ -1,0 +1,11 @@
+[02-Sep-2019 10:10:28 Africa/Dar_es_Salaam] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/tiisor/public_html/wao/includes/editCadreYear.php on line 81
+[18-Nov-2019 13:20:59 Africa/Dar_es_Salaam] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/tiisor/public_html/wao/includes/editCadreYear.php on line 81
+[18-Nov-2019 13:21:23 Africa/Dar_es_Salaam] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/tiisor/public_html/wao/includes/addCadreYear.php on line 76
+[18-Nov-2019 13:22:08 Africa/Dar_es_Salaam] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/tiisor/public_html/wao/includes/addCadreYear.php on line 76
+[18-Nov-2019 13:22:53 Africa/Dar_es_Salaam] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/tiisor/public_html/wao/includes/editCadreYear.php on line 81
+[18-Nov-2019 13:24:30 Africa/Dar_es_Salaam] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/tiisor/public_html/wao/includes/deleteCadreYear.php on line 52
+[18-Nov-2019 14:23:59 Africa/Dar_es_Salaam] PHP Warning:  Invalid argument supplied for foreach() in /home/tiisor/public_html/wao/includes/verifyGraduate.php on line 69
+[18-Nov-2019 14:24:05 Africa/Dar_es_Salaam] PHP Warning:  Invalid argument supplied for foreach() in /home/tiisor/public_html/wao/includes/verifyGraduate.php on line 69
+[18-Nov-2019 14:26:15 Africa/Dar_es_Salaam] PHP Warning:  Invalid argument supplied for foreach() in /home/tiisor/public_html/wao/includes/verifyGraduate.php on line 69
+[20-Nov-2019 18:54:50 Africa/Dar_es_Salaam] PHP Warning:  Invalid argument supplied for foreach() in /home/tiisor/public_html/wao/includes/verifyGraduate.php on line 69
+[20-Nov-2019 18:55:07 Africa/Dar_es_Salaam] PHP Warning:  Invalid argument supplied for foreach() in /home/tiisor/public_html/wao/includes/verifyGraduate.php on line 69

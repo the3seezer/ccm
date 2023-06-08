@@ -1,0 +1,71 @@
+<?php session_start(); 
+include("../lib/dbconnect.php");
+$db = new dbClass();
+$db->connect();
+
+$facid=$_POST['facid'];
+
+
+$getF=$db->getFacilityById($facid);
+$row=$getF->fetch();
+$facname=$row['facname'];
+$disname=$row['DistrictName'];
+$regname=$row['RegName'];
+$regid=$row['Reg_Id'];
+$disid=$row['District_Id'];
+
+$selectreg=$db->getAllRegionName();
+?>
+
+<form  action="includes/process.php" method="post"  class="form-horizontal form-label-left">
+ 
+ 
+     <!--Facility Name-->
+     <div class="item form-group">
+     <label class="control-label col-md-2 col-sm-2 col-xs-12">Agency Name<span class="required">*</span></label>
+     <div class="col-md-6 col-sm-6 col-xs-12">
+     <input id="facName" class="form-control col-md-7 col-xs-12"  name="facName" value="<?php echo $facname; ?>" required type="text">
+     </select>
+     </div>
+     </div>
+	 
+	 
+	 <!--Region-->
+     <div class="item form-group">
+     <label class="control-label col-md-2 col-sm-2 col-xs-12">Region<span class="required">*</span></label>
+     <div class="col-md-6 col-sm-6 col-xs-12">
+     <select id="gender" class="form-control col-md-7 col-xs-12" name="region" required="required" onchange="loadDistrictList(this.value)">
+     <option value="<?php echo $regid; ?>"><?php echo $regname; ?></option>
+     <?php
+	 while($row=$selectreg->fetch())
+	 {
+	 ?>
+     <option value="<?php echo $row['Reg_Id']; ?>"><?php echo $row['RegName']; ?></option>
+	 <?php
+	 }
+	 ?>
+     </select>
+     </div>
+     </div>
+   
+     <!--District-->
+     <div class="item form-group">
+     <label class="control-label col-md-2 col-sm-2 col-xs-12">District<span class="required">*</span></label>
+     <div class="col-md-6 col-sm-6 col-xs-12" id="districtList">
+     <select id="district" class="form-control col-md-7 col-xs-12" name="district" required="required">
+     <option value="<?php echo $disid; ?>"><?php echo $disname; ?></option>
+     </select>
+     </div>
+     </div>
+	 
+                                                                            
+     <div class="ln_solid"></div>
+     <div class="form-group">
+     <div class="col-md-6 col-md-offset-3">
+     <input type="submit"  id="send"  class="btn btn-success" name="editFacilityDetails" value="Save"/>
+     <input type="reset" class="btn btn-default" value="Clear"/>
+	 <input type="hidden" name="facid" value="<?php echo $facid; ?>"/>
+	 
+     </div>
+     </div>
+     </form>	 
